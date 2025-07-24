@@ -3,7 +3,7 @@
   "Salesforce": {
   "command": "npx",
   "args": [ "-y","mcp-remote@0.1.17","https://api.salesforce.com/platform/mcp/v1-beta.1/SERVER-NAME","8080",
-  "--static-oauth-client-infoheader",
+  "--static-oauth-client-info",
   "{\"client_id\":\"CONSUMER-KEY\",\"client_secret\":\"\"}"
   ]
   }
