@@ -19,6 +19,7 @@
 | revenue-cloud | renew | Resource for the Renew Asset API | /connect/revenue-management/assets/actions/renew |
 | revenue-cloud | soql_query | Execute SOQL Query | /query |
 | revenue-cloud | update-nodes | Resource for the Update Nodes Configurator API | /connect/cpq/configurator/actions/update-nodes |
+| setup-apis-context | get_metadata_type_context | Provides contextual information about Salesforce metadata types to help generate accurate Salesforce metadata files. This tool gives you complete field definitions, valid values, constraints, and examples for metadata types. It is a useful resource for creating valid Salesforce metadata files when you need to generate them programmatically, or want to ensure accuracy. | /metadatamcp/{metadataTypeName} |
 | sobject-all | create_sobject_record | Create a record for sObject | /sobjects/{sobject-name} |
 | sobject-all | delete_related_record | Delete a related record via relationship traversal | /sobjects/{sobject-name}/{id}/{relationship-path} |
 | sobject-all | delete_sobject_record | Delete a record for sObject | /sobjects/{sobject-name}/{id} |
