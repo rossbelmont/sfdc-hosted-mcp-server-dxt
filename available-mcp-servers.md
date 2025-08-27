@@ -5,6 +5,7 @@
 | invocable_actions | get_invocable_action_schema | Gets the input and output schema for a specific invocable action. | /invocableactions/{id} |
 | invocable_actions | get_invocable_actions | Invocable Actions are tools/functions that abstract many functionalities. Use this tool to explore what actions might be present in your salesforce org. Gets all invocable actions, each returned item contains id and label. The returned Id should be used as is when subsequent tools such as invoke_invocable_action and get_invocable_action_schema are used. When you don't find a mcp tool to achieve something, use this tool to dynamically discover additional capabilities. | /invocableactions |
 | invocable_actions | invoke_invocable_action | Invokes the specified invocable action with the provided input and returns the output. | /invocableactions/{id}/invocations |
+| pricing-ngp | get_price | Perform pricing using input data mapped to a pricing context and procedure. | /connect/core-pricing/pricing |
 | revenue-cloud | add-nodes | Resource for the Add Nodes Configurator API | /connect/cpq/configurator/actions/add-nodes |
 | revenue-cloud | amend | Resource for the Amend Asset API | /connect/revenue-management/assets/actions/amend |
 | revenue-cloud | cancel | Resource for the Cancel Asset API | /connect/revenue-management/assets/actions/cancel |
