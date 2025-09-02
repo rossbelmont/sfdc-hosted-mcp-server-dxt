@@ -2,6 +2,23 @@
 |-------------|-----------|------------------|----------|
 | data-cloud-queries | get_dc_metadata | Query the metadata API to lists all entities in the dataspace. | /ssot/metadata |
 | data-cloud-queries | post_dc_query_sql | Execute a Data Cloud SQL query, returning the first chunk of data and metadata | /ssot/query-sql |
+| insurance-cloud | add_eligible_product_clauses | add eligible product clauses | /connect/insurance/product-clauses/add-eligible-product-clauses |
+| insurance-cloud | bulk_create_product_clauses | create product clauses in bulk | /connect/insurance/product-clauses/bulk |
+| insurance-cloud | bulk_create_product_surcharges | create product surcharges in bulk | /connect/insurance/product-surcharges/bulk |
+| insurance-cloud | calculate_product_surcharge_tax | calculate tax on a quote or a context | /connect/insurance/product-surcharges/tax-calculation |
+| insurance-cloud | create_underwriting_rules | create underwriting rules | /connect/insurance/underwriting-rules |
+| insurance-cloud | describe_global | Describe Global (List all sObjects) | /sobjects |
+| insurance-cloud | describe_sobject | Describe sObject | /sobjects/{sobject-name}/describe |
+| insurance-cloud | find | Execute a SOSL search | /search |
+| insurance-cloud | get_eligible_clauses | get eligible clauses | /connect/insurance/product-clauses/eligible-product-clauses |
+| insurance-cloud | get_insurance_policy_details | Comprehensive Policy Information Retrieval - Retrieves complete insurance policy information including coverage details, participants, billing history, and transaction records | /connect/insurance/policies/{policyId} |
+| insurance-cloud | get_insurance_quote_details | Comprehensive Quote Information Retrieval - Retrieves complete insurance quote information including rating details, coverage specifications, participant information, and documentation | /connect/insurance/quotes/{quoteId} |
+| insurance-cloud | invoke_underwriting_rules | invoke underwriting rules | /connect/insurance/underwriting-rules/invoke |
+| insurance-cloud | soql_query | Execute SOQL Query | /query |
+| insurance-cloud | underwriting_rule_group_update_status | Updates the status of the ruleset backing the specified Underwriting Rule Group | /connect/insurance/underwriting-rule-group-status/{uwrGroupId} |
+| insurance-cloud | update_product_clause | update a product clause | /connect/insurance/product-clauses/{productClauseId} |
+| insurance-cloud | update_product_surcharge | update a product surcharge | /connect/insurance/product-surcharges/{productSurchargeId} |
+| insurance-cloud | update_underwriting_rule | update an underwriting rule | /connect/insurance/underwriting-rules/{underwritingRuleId} |
 | invocable_actions | get_invocable_action_schema | Gets the input and output schema for a specific invocable action. | /invocableactions/{id} |
 | invocable_actions | get_invocable_actions | Invocable Actions are tools/functions that abstract many functionalities. Use this tool to explore what actions might be present in your salesforce org. Gets all invocable actions, each returned item contains id and label. The returned Id should be used as is when subsequent tools such as invoke_invocable_action and get_invocable_action_schema are used. When you don't find a mcp tool to achieve something, use this tool to dynamically discover additional capabilities. | /invocableactions |
 | invocable_actions | invoke_invocable_action | Invokes the specified invocable action with the provided input and returns the output. | /invocableactions/{id}/invocations |
